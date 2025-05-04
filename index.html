@@ -14,8 +14,23 @@
     <p>這是測試網頁的內容</p>
     部署要多久???
 
+    <br>
+    <div>
+        <iframe id="myIframe" src="https://calendar.google.com/calendar/u/0/appointments/schedules/AcZssZ2ZPn2EIPlPbdfXKAdbQwP4tMAPCHn_xR0PuGXXzEzwBZspn_SZmscy7vT-ZQJUTPNMyZ_iGNoF" width="600" height="400" frameborder="0"></iframe>
+      </div>
+      <div>
+        <button onclick="document.getElementById('myIframe').contentWindow.location.reload();">重整</button>
+        <button onclick="goBack()">上一頁</button>
+      </div>
+      
+      <script>
+      function goBack() {
+        document.getElementById('myIframe').contentWindow.history.back();
+      }
+      </script>
 
-    
+
+
     Lorem, ipsum dolor sit amet consectetur adipisicing elit. Tempore ad repudiandae deserunt rem placeat, voluptatum quo ipsa quia perspiciatis. Excepturi tempora ab eligendi, aspernatur sed quo nesciunt obcaecati nulla possimus.
 
 >
